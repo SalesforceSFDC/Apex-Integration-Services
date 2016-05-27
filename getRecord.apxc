@@ -1,0 +1,10 @@
+// Apex REST class uses one getRecord method.  getRecord method is a custom REST API call.
+// It is annotated with @HttpGet and is invoked for a GET request.
+
+@RestResource(urlMapping='/Account/*')
+global with sharing class MyRestResource {
+    @HttpGet
+    global static Account getRecord() {
+        // Add your code
+    }
+}
