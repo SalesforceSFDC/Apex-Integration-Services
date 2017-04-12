@@ -3,7 +3,7 @@
 Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 
 <blockquote>
-    <p>This is a blockquote.</p>
+    <p>This is a.</p>
 
     <p>This is the second paragraph in the blockquote.</p>
 
