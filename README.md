@@ -5,9 +5,7 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 <blockquote>
     <p>This is a.</p>
 
-    <p>This is the second paragraph in the blockquote.</p>
-
-    <h2>This is an H2 in a blockquote</h2>
+    ttttt
 </blockquote>
 
 ## Pattern Template
