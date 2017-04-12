@@ -6,6 +6,30 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 
 ### Name
 
+### Context
+
+### Problem
+
+### Forces
+
+### Solution
+
+### Sketch
+
+### Results
+
+### Sidebars
+
+
+## Pattern Summary
+
+
+## Pattern Approach
+ * Data Integration
+ * Process Integration
+
+
+
 
 
 
