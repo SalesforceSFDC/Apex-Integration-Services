@@ -8,6 +8,8 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
     ttttt
 </blockquote>
 
+<p><code>There is a literal backtick (`) here.</code></p>
+
 ## Pattern Template
 
 ### Name
