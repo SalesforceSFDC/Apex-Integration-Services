@@ -10,6 +10,10 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 
 <p><code>There is a literal backtick (`) here.</code></p>
 
+![Alt text](/path/to/img.jpg)
+
+![Alt text](/path/to/img.jpg "Optional title")
+
 ## Pattern Template
 
 ### Name
