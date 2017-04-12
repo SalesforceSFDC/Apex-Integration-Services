@@ -28,7 +28,13 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
  * Data Integration
  * Process Integration
 
+## Pattern Selection Guide
 
+| Pattern        | Scenario          |
+| ------------- |:-------------:|
+| Remote Process    |  |
+|   | centered      |
+| zebra stripes | are neat      |
 
 
 
