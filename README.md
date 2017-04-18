@@ -53,6 +53,3 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 | *Remote Call-In* | Data stored in Force.com is created, retrieved, updated, or deleted by a remote system. |
 | *UI Update Based on Data Changes* | The Salesforce user interface must be automatically updated as a result of changes to Salesforce data. | 
 
-
-
-
