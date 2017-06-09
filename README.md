@@ -9,6 +9,7 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 
 * GET - obtain resource from the server.
 * PUT - Create or replace the resource sent in the request body.
+* URI - the endpoint address at which the service is located.
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
