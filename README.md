@@ -138,6 +138,12 @@ Test.setMock(HttpCalloutMock.class, new
 AnimalsHttpCalloutMock());
 ```
 
+Add the class that implements the HttpCalloutMock interface to intercept the callout.  
+
+```Apex
+
+```
+
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
 
