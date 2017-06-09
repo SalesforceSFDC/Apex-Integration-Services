@@ -11,6 +11,7 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * PUT - Create or replace the resource sent in the request body.
 * URI - the endpoint address at which the service is located.
 * JSONParser class converst it to an object.
+* Apex test methods do not support callouts, the testing runtime allows to 'mock' the callout.
 
 ```Apex
 Http http = new Http();
