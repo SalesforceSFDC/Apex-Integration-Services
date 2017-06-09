@@ -174,6 +174,12 @@ global class AnimalsHttpCalloutMock implements HttpCalloutMock {
 }
 ```
 
+When making a callout from a method, the method waits for the external service to send back the callout response before executing subsequent lines of code. Alternatively, you can place the callout code in an asynchronous method that’s annotated with @future(callout=true) or use Queueable Apex. This way, the callout runs on a separate thread, and the execution of the calling method isn’t blocked.
+
+When making a callout from a trigger, the callout must not block the trigger process while waiting for the response. For the trigger to be able to make a callout, the method containing the callout code must be annotated with @future(callout=true) to run in a separate thread.
+
+
+
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
 
