@@ -63,8 +63,19 @@ public class AnimalCallouts {
         // if the request is successful, parse the JSON resposne.
         if (response.getStatusCode() == 200) {
             // Deserializes the JSON string into collections of primitive data types.
-            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(resp
-
+            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(response.getBody());
+            // Cast the values in the 'animals' key as a list 
+            List<Object> animals = (List<Object>) results.get('animals');
+            System.debug('Received the following animals:');
+            for (Object animal: animals) {
+                System.debug(animal);
+            }
+         }
+         return response:
+     }
+     
+     
+            
 ```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
