@@ -51,6 +51,22 @@ if (response.getStatusCode() != 201) {
 }
 ```
 
+```Apex
+public class AnimalCallouts {
+
+    public static HttpResponse makeGetCallout() {
+        Http http = new Http();
+        HttpRequest request = new HttpRequest();
+        request.setEndpoint('');
+        request.setMethod('GET');
+        HttpResponse response = http.send(request);
+        // if the request is successful, parse the JSON resposne.
+        if (response.getStatusCode() == 200) {
+            // Deserializes the JSON string into collections of primitive data types.
+            Map<String, Object> results = (Map<String, Object>) JSON.deserializeUntyped(resp
+
+```
+
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
 
