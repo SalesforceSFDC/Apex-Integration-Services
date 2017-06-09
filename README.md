@@ -128,6 +128,15 @@ private class AnimalsCalloutsTest {
         }
 }
 ```
+### Test a Callout with HttpCalloutMock
+
+Test a POST callout.
+
+Test class instructs the Apex runtime to send this fake response by calling Test.setMock.  For the first argument, pass HttpCalloutMock.class.  For the second argument, pass a new instance of AnimalsHttpCalloutMock, which is the interface implementation of HttpCalloutMock.
+```Apex
+Test.setMock(HttpCalloutMock.class, new
+AnimalsHttpCalloutMock());
+```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
