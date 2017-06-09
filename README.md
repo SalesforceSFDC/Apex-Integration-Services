@@ -97,7 +97,14 @@ public class AnimalCallouts {
 
 ### Test a Callout with StaticResourceMock
 
+```Apex
+@isTest
+private class AnimalsCalloutsTest {
 
+    @isTest static void testGetCalloutsTest() {
+        // Create the mock response based on a static resource
+        
+```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
