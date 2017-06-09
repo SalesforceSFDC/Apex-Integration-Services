@@ -2,7 +2,8 @@
 
 Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 
-
+* Web service callouts to SOAP web services use XML, and typically require a WSDL.
+* HTTP callouts to services typically use REST with JSON.
 
 
 <blockquote>
