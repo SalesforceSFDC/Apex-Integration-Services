@@ -23,3 +23,4 @@ private class AnimalsCalloutTest {
         System.assertEquals(3,animals.size(),'The array should only contain 3 items.');
     }
 }
+
