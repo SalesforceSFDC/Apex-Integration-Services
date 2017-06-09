@@ -31,6 +31,18 @@ if (response.getStatusCode() == 200) {
 }
 ```
 
+```Apex
+Http http = new Http();
+HttpRequest request = new HttpRequest();
+request.setEndpoint('');
+request.setMethod('POST');
+request.setHeader('Content-Type', 'application/json;charset=UTF-8');
+// Set the body as a JSON object
+request.setBody('{"name":"mighty moose"}');
+HttpResponse response = http.send(request);
+if (response.getStatusCode() != 201) {
+    
+```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
