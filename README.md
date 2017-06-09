@@ -12,7 +12,7 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * URI - the endpoint address at which the service is located.
 * JSONParser class converst it to an object.
 * Apex test methods do not support callouts, the testing runtime allows to 'mock' the callout.
-* To test the callouts, use mock callouts by either implementing an interface or using static resources.
+* To test the callouts, use mock callouts by either implementing an interface or using static resources.  When using the mock callout, the request is not sent to the endpoint.  Instead, the Apex runtime knows to look up the response specified in the static resource and returns it instead.
 
 ```Apex
 Http http = new Http();
