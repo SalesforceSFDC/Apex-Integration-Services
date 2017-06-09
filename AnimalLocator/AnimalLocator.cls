@@ -19,7 +19,7 @@ public class AnimalLocator {
       // If the request is successful, parse the JSON response.
       if (response.getStatusCode() == 200) {
         // Deserialize the JSON string into collections of primitive data types.
-        Map<Integer, Object>
+        Map<Integer, Object> Results 
       }
   }
 }
