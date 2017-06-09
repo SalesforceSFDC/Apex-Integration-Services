@@ -95,6 +95,10 @@ public class AnimalCallouts {
    } 
 ```
 
+### Test a Callout with StaticResourceMock
+
+
+
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
 
 
