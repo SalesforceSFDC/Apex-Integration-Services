@@ -141,7 +141,19 @@ AnimalsHttpCalloutMock());
 Add the class that implements the HttpCalloutMock interface to intercept the callout.  
 
 ```Apex
-
+@isTest
+global class AnimalsHttpCalloutMock implements HttpCalloutMock {
+    
+    // Implement this interface method
+    global HTTPResponse respond(HTTPRequest request) {
+        // Create a fake response
+        HttpResponse response = new HttpResponse();
+        response.setHeader('Content-Type', 'application/json');
+        response.setBody('{"animals":"majestic badger"}');
+        response.setStatusCode(200);
+        return response;
+     }
+}
 ```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
