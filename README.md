@@ -120,7 +120,13 @@ private class AnimalsCalloutsTest {
             result.getHeader('Content-Type'),
             'The content value is not expected.');
         // Verify the array contains 3 items
-        
+        Map<String, Object> results = (Map<String, Object>)
+            JSON.deserializeUntyped(result.getBody());
+        List<Object> animals = (List<Object>) results.get('animals');
+        System.assertEquals(3, animals.size(),
+            'The array should only contain 3 items.');
+        }
+}
 ```
 
 * [Invoking Callouts Using Apex](https://developer.salesforce.com/docs/atlas.en-us.206.0.apexcode.meta/apexcode/apex_callouts.htm)
