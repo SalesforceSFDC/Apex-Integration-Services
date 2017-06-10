@@ -232,4 +232,3 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 | *Batch Data Synchronization* | Data stored in Force.com should be created or refreshed to reflect updates from an external system, and when changes from Force.com should be sent to an external system.  Updates in either direction are done in batch manner.      |
 | *Remote Call-In* | Data stored in Force.com is created, retrieved, updated, or deleted by a remote system. |
 | *UI Update Based on Data Changes* | The Salesforce user interface must be automatically updated as a result of changes to Salesforce data. | 
-
