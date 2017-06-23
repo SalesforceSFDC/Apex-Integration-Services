@@ -8,6 +8,7 @@ using the ID passed into the method.
 - Run your test class at least once (via 'Run All' tests the Developer Console) before attempting to verify this challenge.
 **/
 
+
 public class AnimalLocator {
   
   public static HttpResponse makeGetCallout {
