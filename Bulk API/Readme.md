@@ -19,3 +19,6 @@
     * Check status of all batches at a reasonable interval. Each status check returns the state of each batch.
     * When all batches have either completed or failed, retrieve the result for each batch.
     * Match the result sets with the original data set to determine which records failed and succeeded, and take appropriate action.
+
+* At any point in this process, you can abort the job. Aborting a job has the effect of preventing any unprocessed batches from being processed. It doesn't undo the effects of batches already processed.
+
