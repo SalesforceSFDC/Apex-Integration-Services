@@ -17,3 +17,7 @@
 * The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
 
 ## Limitations
+
+## Configuration Steps
+1. Provide REST endpoint (i.e. https://ionic2-realty-rest-demo.herokuapp.com/properties/)
+2. 
