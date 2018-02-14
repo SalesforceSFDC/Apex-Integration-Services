@@ -10,4 +10,7 @@
   * Heroku Connect can expose a Heroku Postgres database to Salesforce Connect.
   * Any Heroku app can provide endpoints that can be consumed with Salesforce Connect.
 
+## Benefits
+* The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
+
 ## Limitations
