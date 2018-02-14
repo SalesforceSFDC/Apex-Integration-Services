@@ -10,7 +10,8 @@
   * Any OData 2.0 data source can be pulled into Salesforce with Salesforce Connect.
   * Heroku Connect can expose a Heroku Postgres database to Salesforce Connect.
   * Any Heroku app can provide endpoints that can be consumed with Salesforce Connect.
-  * custom adapters for Salesforce Connect that proxy the data that the REST services provide
+* Custom adapters for Salesforce Connect that proxy the data that the REST services provide
+* The primary use case for Salesforce Connect custom adapters is when an external system provides data that is useful in the standard Salesforce UI
 
 ## Benefits
 * The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
