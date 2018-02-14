@@ -22,6 +22,15 @@ When interfaces are built with open-source technologies like Java, Node.js, PHP,
 External processes can offload batch processing or workflow and trigger event handling to apps on Heroku. This method can be helpful depending on the type of job that needs to be done and the amount of effort involved. Data science, machine learning, image and video processing, and integration with legacy or external systems can be reasons to offload external processes to Heroku.
 
 As an example, let's say your real estate company uploads photos for each house it lists for sale. These photos are huge, so you need a way to resize them to reduce loading times and storage costs. You can easily offload this job to an external process on Heroku. Each time a photo is uploaded to Salesforce, it is sent to an app on Heroku for processing, and the resized image is saved back into Salesforce. The app on Heroku that handles the external process could be responsible only for that one piece of the system. In that case, the app is likely considered a microservice that can be deployed separately without any other system dependencies.
+
+
+## Integration Methods Overview
+* Heroku Connect
+* Salesforce Connect
+* Salesforce REST APIs
+* Callouts
+* Canvas
+
 ## Apex REST Callouts
 
 * GET - obtain resource from the server.
