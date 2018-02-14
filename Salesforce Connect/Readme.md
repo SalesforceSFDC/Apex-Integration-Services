@@ -1,5 +1,5 @@
 # Salesforce Connect
-* Salesforce Connect maps data tables in external systems to external objects in your org.
+* Salesforce Connect maps data tables in external systems to external objects in your org.  External objects map to data located outside of the Salesforce org.
 * [Rendering GitHub JSON Data in Salesforce](https://developer.salesforce.com/blogs/developer-relations/2015/08/rendering-github-json-data-salesforce.html)
 * Use Salesforce Connect (formerly called Lightning Connect) as a data proxy to pull OData or other data sources into Salesforce on demand. 
 * No data is copied to the Salesforce database. 
