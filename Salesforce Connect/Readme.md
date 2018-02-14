@@ -1,4 +1,5 @@
 # Salesforce Connect
+* [Rendering GitHub JSON Data in Salesforce](https://developer.salesforce.com/blogs/developer-relations/2015/08/rendering-github-json-data-salesforce.html)
 * Use Salesforce Connect (formerly called Lightning Connect) as a data proxy to pull OData or other data sources into Salesforce on demand. 
 * No data is copied to the Salesforce database. 
 * Run endpoints that expose OData 2.0 on Heroku or as provided by external systems. 
