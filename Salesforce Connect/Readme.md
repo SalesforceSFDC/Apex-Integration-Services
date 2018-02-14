@@ -12,7 +12,8 @@
   * Any Heroku app can provide endpoints that can be consumed with Salesforce Connect.
 * Custom adapters for Salesforce Connect that proxy the data that the REST services provide
 * The primary use case for Salesforce Connect custom adapters is when an external system provides data that is useful in the standard Salesforce UI
-
+* [DataSource.Column docs](https://developer.salesforce.com/docs/atlas.en-us.200.0.apexcode.meta/apexcode/apex_class_DataSource_Column.htm#apex_class_DataSource_Column)
+* [Paging with the Apex Connector Framework](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_paging.htm)
 ## Authentication
 * [Authentication for Salesforce Connect Custom Adapters
 ](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_authentication.htm)
