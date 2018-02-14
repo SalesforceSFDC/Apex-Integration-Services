@@ -3,6 +3,7 @@
 * No data is copied to the Salesforce database. 
 * Run endpoints that expose OData 2.0 on Heroku or as provided by external systems. 
 * [Salesforce Connect custom adapters](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_custom_adapter.htm) allow Salesforce to proxy any data source that Apex can talk to, including REST with XML or JSON and SOAP.
+* Proxying external data into Salesforce without copying it to the database.
 * 
 
 ## Limitations
