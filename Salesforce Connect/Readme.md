@@ -13,6 +13,10 @@
 * Custom adapters for Salesforce Connect that proxy the data that the REST services provide
 * The primary use case for Salesforce Connect custom adapters is when an external system provides data that is useful in the standard Salesforce UI
 
+## Authentication
+* [Authentication for Salesforce Connect Custom Adapters
+](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_connector_authentication.htm)
+
 ## Benefits
 * The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
 
