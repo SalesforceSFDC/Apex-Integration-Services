@@ -35,6 +35,11 @@
 
 * Create the external data source. If your external system hosts multiple services, create an external data source for each service that’s required to access the data.
 * Create the external objects and their fields. Create an external object in your Salesforce org for each external data table that you want to access. On each external object, create a custom field for each external table column that you want to access from your Salesforce org.
+* Define relationships for the external objects. Create lookup, external lookup, and indirect lookup relationship fields to provide seamless views of data across system boundaries.
+* Enable user access to external objects and their fields. Grant object and field permissions through permissions sets or profiles.
+* Set up user authentication. For each external data source that uses per-user authentication, do both of the following.
+ * Enable users to authenticate to the external data source. Grant users access through permission sets or profiles.
+ * Set up each user’s authentication settings. Tell your users how to set up and manage their own authentication settings for external systems in their personal settings. Alternatively, you can perform this task for each user.
 
 ### 1. Provide REST endpoint (i.e. https://ionic2-realty-rest-demo.herokuapp.com/properties/)
 ### 2. Write Apex code to bridge between Salesforce Connect and the service.  
