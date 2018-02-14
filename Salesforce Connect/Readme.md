@@ -20,4 +20,7 @@
 
 ## Configuration Steps
 1. Provide REST endpoint (i.e. https://ionic2-realty-rest-demo.herokuapp.com/properties/)
-2. 
+2. Write Apex code to bridge between Salesforce Connect and the service.  
+  * Apex adapter that extends the DataSource.Connection class and implements the sync(), query(), and search() methods with a basic structure like:
+    * `global class RealEstateConnection extends DataSource.Connection { override global List<DataSource.TableResult> search(DataSource.SearchContext searchContext) { } override global List<DataSource.Table> sync() { } override global DataSource.TableResult query(DataSource.QueryContext queryContext) { } } `
+
