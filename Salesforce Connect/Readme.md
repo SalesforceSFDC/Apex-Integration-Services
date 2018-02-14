@@ -32,6 +32,10 @@
 ## Limitations
 
 ## Configuration Steps
+
+* Create the external data source. If your external system hosts multiple services, create an external data source for each service that’s required to access the data.
+* Create the external objects and their fields. Create an external object in your Salesforce org for each external data table that you want to access. On each external object, create a custom field for each external table column that you want to access from your Salesforce org.
+
 ### 1. Provide REST endpoint (i.e. https://ionic2-realty-rest-demo.herokuapp.com/properties/)
 ### 2. Write Apex code to bridge between Salesforce Connect and the service.  
   * Apex adapter that extends the DataSource.Connection class and implements the sync(), query(), and search() methods with a basic structure like:
