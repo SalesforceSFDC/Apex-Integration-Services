@@ -31,6 +31,7 @@
 * Two options for setting up user authentication for an external data source:
   * Named Principal—Your entire Salesforce org shares one login account on the external system.
   * Per User—Your org uses multiple login accounts on the external system. You or your users can set up their personal authentication settings for the external system.
+* [Identity Type for External Data Sources](https://help.salesforce.com/articleView?id=platform_connect_identity_type.htm&type=5)
 ## Benefits
 * The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
 
