@@ -2,7 +2,11 @@
 
 ## External Objects
 * Salesforce Connect maps data tables in external systems to external objects in your org.  External objects map to data located outside of the Salesforce org.  Accessing an external object fetches the data from the external system in real time.
-##
+## Use Case
+* You have a large amount of data that you don’t want to copy into your Salesforce org.
+* You need small amounts of data at any one time.
+* You need real-time access to the latest data.
+* You store your data in the cloud or in a back-office system, but want to display or process that data in your Salesforce org.
 * [Rendering GitHub JSON Data in Salesforce](https://developer.salesforce.com/blogs/developer-relations/2015/08/rendering-github-json-data-salesforce.html)
 * Use Salesforce Connect (formerly called Lightning Connect) as a data proxy to pull OData or other data sources into Salesforce on demand. 
 * No data is copied to the Salesforce database. 
