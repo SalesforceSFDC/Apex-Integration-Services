@@ -11,6 +11,12 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * It also parallelizes development by enabling small autonomous teams to develop, deploy and scale their respective services independently. 
 * It also allows the architecture of an individual service to emerge through continuous refactoring.[2] Microservices-based architectures enable continuous delivery and deployment.
 
+## Heroku & Salesforce Integration
+### Integration Through Data Replication
+Data replication is copying or synchronizing data between Salesforce and another system. You can use data replication for data warehousing to enable cross-data source reporting and analysis. You can also use it to work with legacy systems that either need data from Salesforce or feed data into Salesforce. The most common use case with Heroku and Salesforce is to provide a high-throughput, low-latency interface for customer-facing applications built with open-source technologies.
+### Integration Through Data Proxies
+Data proxies aggregate different datastores, but unlike data replication, the data isn't copied. The data can be read only on demand. This approach enables data science, business intelligence, reporting, and dashboarding tools to collate data across multiple datastores without worrying about data synchronization challenges like storage and staleness. You can integrate legacy systems and external systems through data proxies to provide data to Salesforce, or Salesforce can provide its data to other external systems.
+
 ## Apex REST Callouts
 
 * GET - obtain resource from the server.
