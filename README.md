@@ -5,6 +5,12 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * Web service callouts to SOAP web services use XML, and typically require a WSDL.
 * HTTP callouts to services typically use REST with JSON.
 
+## Microservices
+* Microservices is a variant of the service-oriented architecture (SOA) architectural style that structures an application as a collection of loosely coupled services. 
+* In a microservices architecture, services should be fine-grained and the protocols should be lightweight. The benefit of decomposing an application into different smaller services is that it improves modularity and makes the application easier to understand, develop and test. 
+* It also parallelizes development by enabling small autonomous teams to develop, deploy and scale their respective services independently. 
+* It also allows the architecture of an individual service to emerge through continuous refactoring.[2] Microservices-based architectures enable continuous delivery and deployment.
+
 ## Apex REST Callouts
 
 * GET - obtain resource from the server.
