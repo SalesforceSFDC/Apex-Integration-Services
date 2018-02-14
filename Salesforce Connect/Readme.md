@@ -2,6 +2,8 @@
 
 ## External Objects
 * Salesforce Connect maps data tables in external systems to external objects in your org.  External objects map to data located outside of the Salesforce org.  Accessing an external object fetches the data from the external system in real time.
+* Display URL is the OData 2.0 URL representing a record in the external database 
+* External ID is the primary key value for each record.
 ## Use Case
 * You have a large amount of data that you don’t want to copy into your Salesforce org.
 * You need small amounts of data at any one time.
