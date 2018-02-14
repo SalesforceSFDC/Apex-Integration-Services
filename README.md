@@ -14,9 +14,14 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 ## Heroku & Salesforce Integration
 ### <i>Integration Through Data Replication</i>
 Data replication is copying or synchronizing data between Salesforce and another system. You can use data replication for data warehousing to enable cross-data source reporting and analysis. You can also use it to work with legacy systems that either need data from Salesforce or feed data into Salesforce. The most common use case with Heroku and Salesforce is to provide a high-throughput, low-latency interface for customer-facing applications built with open-source technologies.
-### Integration Through Data Proxies
+### <i>Integration Through Data Proxies</i>
 Data proxies aggregate different datastores, but unlike data replication, the data isn't copied. The data can be read only on demand. This approach enables data science, business intelligence, reporting, and dashboarding tools to collate data across multiple datastores without worrying about data synchronization challenges like storage and staleness. You can integrate legacy systems and external systems through data proxies to provide data to Salesforce, or Salesforce can provide its data to other external systems.
+### <i><Integration Through Custom User Interfaces/i>
+When interfaces are built with open-source technologies like Java, Node.js, PHP, and so on, they can run on Heroku and be integrated into the Salesforce UI or just with Salesforce data. Other times, a legacy or external system provides a user interface that needs to be surfaced in the Salesforce UI.
+### <i>Integration Through External Processes</i>
+External processes can offload batch processing or workflow and trigger event handling to apps on Heroku. This method can be helpful depending on the type of job that needs to be done and the amount of effort involved. Data science, machine learning, image and video processing, and integration with legacy or external systems can be reasons to offload external processes to Heroku.
 
+As an example, let's say your real estate company uploads photos for each house it lists for sale. These photos are huge, so you need a way to resize them to reduce loading times and storage costs. You can easily offload this job to an external process on Heroku. Each time a photo is uploaded to Salesforce, it is sent to an app on Heroku for processing, and the resized image is saved back into Salesforce. The app on Heroku that handles the external process could be responsible only for that one piece of the system. In that case, the app is likely considered a microservice that can be deployed separately without any other system dependencies.
 ## Apex REST Callouts
 
 * GET - obtain resource from the server.
