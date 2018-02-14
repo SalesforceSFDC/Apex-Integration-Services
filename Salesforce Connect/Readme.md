@@ -25,4 +25,16 @@
 ```Apex
 global class RealEstateConnection extends DataSource.Connection { override global List<DataSource.TableResult> search(DataSource.SearchContext searchContext) { } override global List<DataSource.Table> sync() { } override global DataSource.TableResult query(DataSource.QueryContext queryContext) { } }
 ```
+ * Search out-of-the-box utility:
+```Apex 
+ override global List<DataSource.TableResult> search(DataSource.SearchContext searchContext) { return DataSource.SearchUtils.searchByName(searchContext, this); } 
+```
 
+* The sync() method tells Salesforce about the data structure of the External Objects.For this example, we can just add a single table with a few columns. The ExternalId, DisplayUrl, and Name fields are required.
+```Apex
+override global List<DataSource.Table> sync() { List<DataSource.Column> columns = new List<DataSource.Column>(); columns.add(DataSource.Column.text('ExternalId', 255)); columns.add(DataSource.Column.url('DisplayUrl')); columns.add(DataSource.Column.text('Name', 128)); columns.add(DataSource.Column.text('city', 128)); columns.add(DataSource.Column.text('price', 128)); List<DataSource.Table> tables = new List<DataSource.Table>(); tables.add(DataSource.Table.get('Properties', 'Name', columns)); return tables; } 
+```
+* When a user in Salesforce accesses an External Object’s list of records, the query() method fetches and parses the data into the data structure defined in the sync() method. Here is an example of the query() method for the real estate REST service.
+```Apex
+ override global DataSource.TableResult query(DataSource.QueryContext queryContext) { List<Map<String, Object>> properties = DataSource.QueryUtils.process(queryContext, getProperties()); DataSource.TableResult tableResult = DataSource.TableResult.get(queryContext, properties); return tableResult; } public List<Map<String, Object>> getProperties() { Http httpProtocol = new Http(); HttpRequest request = new HttpRequest(); String url = 'https://ionic2-realty-rest-demo.herokuapp.com/properties/'; request.setEndPoint(url); request.setMethod('GET'); HttpResponse response = httpProtocol.send(request); List<Map<String, Object>> properties = new List<Map<String, Object>>(); for (Object item : (List<Object>)JSON.deserializeUntyped(response.getBody())) { Map<String, Object> property = (Map<String, Object>)item; property.put('ExternalId', property.get('id')); property.put('DisplayUrl', 'https://ionic2-realty-rest-demo.herokuapp.com/'); property.put('Name', property.get('title')); properties.add(property); } return properties; } 
+```
