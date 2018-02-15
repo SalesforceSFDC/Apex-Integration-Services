@@ -1,13 +1,5 @@
 # Salesforce Connect
 
-## Description 
-
-## Use Case 
-
-## Limitations
-
-## Implementation
-
 ## External Objects
 * Salesforce Connect maps data tables in external systems to external objects in your org.  External objects map to data located outside of the Salesforce org.  Accessing an external object fetches the data from the external system in real time.
 * Display URL is the OData 2.0 URL representing a record in the external database 
@@ -44,7 +36,7 @@
 * The primary benefit of using Salesforce Connect instead of traditional ETL methods is that the data is always in sync because it's retrieved in near real time and not copied.
 
 ## Limitations
-
+* [General Limits](https://help.salesforce.com/articleView?id=platform_connect_general_limits.htm&type=5)
 ## Configuration Steps
 
 * Create the external data source. If your external system hosts multiple services, create an external data source for each service that’s required to access the data.
