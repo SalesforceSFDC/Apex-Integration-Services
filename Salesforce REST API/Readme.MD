@@ -5,3 +5,4 @@
 ```Node.js
 var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/services/data/v20.0/query/?q=' + encodeURIComponent(query); request.get(url, { 'auth': { 'bearer': 'bearerToken' } }); 
 ```
+* Apex HTTP callout programmatically makes a REST call to an outside app.
