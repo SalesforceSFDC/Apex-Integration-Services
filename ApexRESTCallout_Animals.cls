@@ -17,5 +17,3 @@ if (response.getStatusCode() == 200) {
         System.debug(animal);
     }
 }
-
-
