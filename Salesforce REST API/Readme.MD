@@ -2,3 +2,6 @@
 * The REST APIs use OAuth for authentication.
 * The wrapper libraries handle low-level tasks such as authentication and request and response handling.
 * 
+```Node.js
+var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/services/data/v20.0/query/?q=' + encodeURIComponent(query); request.get(url, { 'auth': { 'bearer': 'bearerToken' } }); 
+```
