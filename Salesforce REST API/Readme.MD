@@ -86,3 +86,4 @@ end
 ```
 
 * Apex HTTP callout programmatically makes a REST call to an outside app.  App receives a request with the event details payload and then performs the action.
+* https://developer.salesforce.com/docs/atlas.en-us.212.0.api_rest.meta/api_rest/intro_usage_rest_resources.htm
