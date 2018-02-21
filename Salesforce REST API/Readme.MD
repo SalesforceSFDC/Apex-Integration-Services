@@ -19,7 +19,7 @@ var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/service
 ## Use Case
 
 ## Limitations
-
+* [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
 ## Pattern Value-add
 
 ## Resources
