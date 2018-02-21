@@ -11,7 +11,10 @@ API for developing mobile applications or external clients.
 ## Implementation Steps
 * Set Up OAuth 2.0
   * Create a connected app
-2. 
+  * From client application, make a request to the appropriate Salesforce token request endpoint that passes in grant_type, client_id, client_secret, and redirect_uri. 
+  * Store the access token value as a cookie to use in all subsequent requests. 
+  * Once authenticated, every request must pass in the access_token value in the header. 
+
 ## Pattern Value-add
 * Ubiquitous access: Use standard HTTP method call-outs, available on every language and platform, to make requests and retrieve information from Force.com.
 * Standards-based security: Utilize the OAuth protocol for authenticating your REST calls.
