@@ -21,5 +21,8 @@ var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/service
 ## Limitations
 * [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
 ## Pattern Value-add
-
+* Ubiquitous access: Use standard HTTP method call-outs, available on every language and platform, to make requests and retrieve information from Force.com.
+* Standards-based security: Utilize the OAuth protocol for authenticating your REST calls.
+* Data model: Gain access to the same data model and standard objects as those in SOAP-based Web services.
+* Flexible formats: Serialize data in either the XML or JSON format.
 ## Resources
