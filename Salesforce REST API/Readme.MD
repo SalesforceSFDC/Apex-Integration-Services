@@ -15,9 +15,9 @@ var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/service
 #
 
 ## Description
-
+The Force.com REST API is used for integrate with Force.com applications using HTTP methods, in either XML or JSON formats. A
 ## Use Case
-
+API for developing mobile applications or external clients.
 ## Limitations
 * [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
 ## Pattern Value-add
