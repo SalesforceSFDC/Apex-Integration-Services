@@ -12,3 +12,12 @@ var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/service
 ## REST API
 * A REST request consists of four components: a resource URI, an HTTP method, request headers, and a request body. Request headers specify metadata for the request. 
 * 
+#
+
+## Description
+
+## Use Case
+
+## Limitations
+
+## 
