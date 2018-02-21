@@ -18,6 +18,7 @@ API for developing mobile applications or external clients.
 ## Resources
 * [Salesforce API Basics](https://trailhead.salesforce.com/modules/api_basics)
 * [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
+* [REST API](https://developer.salesforce.com/page/REST_API)
 # Notes
 * Salesforce REST APIs provide a way to integrate with Salesforce through simple HTTP + JSON requests. 
 * The REST APIs use OAuth for authentication.
