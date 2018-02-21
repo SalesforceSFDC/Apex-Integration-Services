@@ -20,6 +20,9 @@ The Force.com REST API is used for integrate with Force.com applications using H
 API for developing mobile applications or external clients.
 ## Limitations
 * [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
+
+## Implementation Steps
+
 ## Pattern Value-add
 * Ubiquitous access: Use standard HTTP method call-outs, available on every language and platform, to make requests and retrieve information from Force.com.
 * Standards-based security: Utilize the OAuth protocol for authenticating your REST calls.
