@@ -32,7 +32,29 @@ API for developing mobile applications or external clients.
 * The REST APIs use OAuth for authentication.
 * The wrapper libraries handle low-level tasks such as authentication and request and response handling.
 * Each request to the APIs must include an authentication token or key.
+
+### Node.js Sample Using Nforce
 ```Node.js
 var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/services/data/v20.0/query/?q=' + encodeURIComponent(query); request.get(url, { 'auth': { 'bearer': 'bearerToken' } }); 
 ```
+### Ruby Sample Using Restforce
+```Ruby
+require 'restforce'
+
+// create the connection with the Salesforce connected app
+client = Restforce.new :username => ENV['USERNAME'],
+  :password       => ENV['PASSWORD'],
+  :security_token => ENV['SECURITY_TOKEN'],
+  :client_id      => ENV['CLIENT_ID'],
+  :client_secret  => ENV['CLIENT_SECRET']
+
+// execute the query
+accounts = client.query("select id, name from account limit 5")
+
+// output the account names
+accounts.each do |account|
+  p account.Name
+end
+```
+
 * Apex HTTP callout programmatically makes a REST call to an outside app.  App receives a request with the event details payload and then performs the action.
