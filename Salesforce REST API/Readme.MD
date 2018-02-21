@@ -9,7 +9,7 @@ API for developing mobile applications or external clients.
 * [General Salesforce REST API limitations](https://developer.salesforce.com/docs/atlas.en-us.212.0.api.meta/api/implementation_considerations.htm?SearchType=Stem)
 
 ## Implementation Steps
-1. Set Up OAuth 2.0
+* Set Up OAuth 2.0
   * Create a connected app
 2. 
 ## Pattern Value-add
