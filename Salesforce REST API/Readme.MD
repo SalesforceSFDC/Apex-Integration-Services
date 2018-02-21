@@ -20,4 +20,6 @@ var query = 'SELECT name Account'; var url = 'https://na1.salesforce.com/service
 
 ## Limitations
 
-## 
+## Pattern Value-add
+
+## Resources
