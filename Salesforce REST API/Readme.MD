@@ -1,4 +1,4 @@
-## Force.com REST API
+## Force.com (Salesforce) REST API
 
 * Salesforce REST APIs provide a way to integrate with Salesforce through simple HTTP + JSON requests. 
 * The REST APIs use OAuth for authentication.
