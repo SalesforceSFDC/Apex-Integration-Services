@@ -1,11 +1,8 @@
 ## Force.com (Salesforce) REST API
 
-* A REST request consists of four components: a resource URI, an HTTP method, request headers, and a request body. Request headers specify metadata for the request. 
-* 
-#
-
 ## Description
 The Force.com REST API is used for integrate with Force.com applications using HTTP methods, in either XML or JSON formats. The REST APIs use OAuth for authentication.  The wrapper libraries handle low-level tasks such as authentication and request and response handling.  Each request to the APIs must include an authentication token or key.
+A REST request consists of four components: a resource URI, an HTTP method, request headers, and a request body. Request headers specify metadata for the request. 
 ## Use Case
 API for developing mobile applications or external clients.
 ## Limitations
@@ -20,7 +17,7 @@ API for developing mobile applications or external clients.
 * Flexible formats: Serialize data in either the XML or JSON format.
 ## Resources
 
-#
+# Notes
 * Salesforce REST APIs provide a way to integrate with Salesforce through simple HTTP + JSON requests. 
 * The REST APIs use OAuth for authentication.
 * The wrapper libraries handle low-level tasks such as authentication and request and response handling.
