@@ -21,7 +21,6 @@ public class AnimalCallouts {
         return response;
     }
 
-    
     public static HttpResponse makePostCallout() {
         Http http = new Http();
         HttpRequest request = new HttpRequest();
