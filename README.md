@@ -11,6 +11,14 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * It also parallelizes development by enabling small autonomous teams to develop, deploy and scale their respective services independently. 
 * It also allows the architecture of an individual service to emerge through continuous refactoring.[2] Microservices-based architectures enable continuous delivery and deployment.
 
+## Heroku
+* Applications consist of your source code, a description of any dependencies, and a Procfile.
+* Procfiles list process types - named commands that you may want executed
+* Deploying applications involves sending the application to Heroku using either Git, GitHub, or via an API.
+* Buildpacks take your application, its dependencies, and the language runtime, and produce slugs. 
+* A slug is a bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system - ready for execution.
+* Dynos are isolated, virtualized Unix containers, that provide the environment required to run an application.
+
 ## Heroku & Salesforce Integration
 ### <i>Integration Through Data Replication</i>
 Data replication is copying or synchronizing data between Salesforce and another system. You can use data replication for data warehousing to enable cross-data source reporting and analysis. You can also use it to work with legacy systems that either need data from Salesforce or feed data into Salesforce. The most common use case with Heroku and Salesforce is to provide a high-throughput, low-latency interface for customer-facing applications built with open-source technologies.
