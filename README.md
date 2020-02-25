@@ -18,6 +18,14 @@ Apex REST Callouts, Apex SOAP Callouts, Apex Web Services
 * Buildpacks take your application, its dependencies, and the language runtime, and produce slugs. 
 * A slug is a bundle of your source, fetched dependencies, the language runtime, and compiled/generated output of the build system - ready for execution.
 * Dynos are isolated, virtualized Unix containers, that provide the environment required to run an application.
+* Your application’s dyno formation is the total number of currently-executing dynos, divided between the various process types you have scaled.
+* Config vars contain customizable configuration data that can be changed independently of your source code. The configuration is exposed to a running application via environment variables.  At runtime, all of the config vars are exposed as environment variables - so they can be easily extracted programatically.
+* Releases are an append-only ledger of slugs and config vars.   The combination of slug and configuration is called a release.
+* The dyno manager of the Heroku platform is responsible for managing dynos across all applications running on Heroku.
+* Applications that use the free dyno type will sleep. When a sleeping application receives HTTP traffic, it will be awakened - causing a delay of a few seconds. Using one of the other dyno types will avoid sleeping.
+* One-off Dynos are temporary dynos that can run with their input/output attached to your local terminal. They’re loaded with your latest release.
+* Each dyno gets its own ephemeral filesystem - with a fresh copy of the most recent release. It can be used as temporary scratchpad, but changes to the filesystem are not reflected to other dynos.
+
 
 ## Heroku & Salesforce Integration
 ### <i>Integration Through Data Replication</i>
